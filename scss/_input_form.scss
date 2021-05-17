@@ -1,0 +1,108 @@
+// @import "_main_variable_gv.scss";
+// @import "_mixin.scss";
+
+.input-inline {
+  @extend %pos-cent-marg;
+  max-width: 408px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #159822;
+}
+
+.input-wrapper {
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.input-wrapper h2 {
+  @extend %text-main;
+  padding-top: 60px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-wrapper p {
+  @extend %text-main;
+  @extend %marg-bott;
+  @extend %pos-cent-marg;
+  max-width: 740px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.input-wrapper-item {
+  @extend %marg-bott;
+  display: flex;
+  justify-content: center;
+}
+
+.input-style {
+  @extend %text-main;
+  min-width: 240px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #8a8a8a;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-size: 16px;
+  color: #000000;
+}
+
+input[type="text"]::placeholder {
+  @extend %text-main;
+  padding: 0;
+  font-size: 16px;
+  color: #8a8a8a;
+  text-align: left;
+}
+
+input:active {
+  @extend %input-hov-act;
+}
+
+input:focus {
+  @extend %input-hov-act;
+}
+
+input:hover {
+  @extend %input-hov-act;
+}
+
+.button-input {
+  margin-bottom: 0;
+  padding-bottom: 60px;
+}
+
+.button-in {
+  @include btn-inp-form;
+}
+
+.button-in:hover {
+  background-color: $color-main-hov;
+}
+
+.input-w + .input-w {
+  margin-left: 24px;
+}
+
+@media (max-width: 1053px) {
+  .input-wrapper h2 {
+    padding: 32px 16px 0 16px;
+  }
+  .input-wrapper p {
+    padding: 0 16px;
+  }
+  .input-wrapper-item {
+    margin-bottom: 0;
+  }
+  .input-style {
+    min-width: 290px;
+    margin-bottom: 32px;
+  }
+  .input-w + .input-w {
+    margin-left: 0;
+  }
+  .input-wrapper-item {
+    display: inline-block;
+  }
+}

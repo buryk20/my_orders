@@ -1,0 +1,184 @@
+.wrp-line-br {
+  @extend %pos-cent-marg;
+  max-width: 1440px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.line-br {
+  border-top: $line-grey-col;
+  margin-bottom: 40px;
+}
+
+.text-main-br {
+  max-width: 1116px;
+  @extend %pos-cent-marg;
+  @include main-text;
+}
+
+.text-top-br {
+  @include main-text;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.consultation-br {
+  margin-bottom: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include main-text;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.consultation-br > p > a {
+  color: $color-main;
+  text-decoration: underline;
+}
+.consultation-br > p > a > img {
+  display: inherit;
+}
+
+.wrp-advantages-br {
+  @extend %pos-cent-marg;
+  max-width: 1144px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-icon-br {
+  @extend %icon-position-cent;
+}
+
+.advantages-icon-br > img {
+  position: relative;
+  top: 36px;
+  left: 0;
+}
+
+.box-adv-br {
+  @include box-advantages;
+}
+
+.box-adv-br p {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.sale-btm-br {
+  @include btn-inp-form;
+  margin-left: 0;
+}
+
+.sale-btm-br:hover {
+  background-color: $color-hov;
+}
+
+.res-text-br {
+  @extend %pos-cent-flex;
+  max-width: 434px;
+  padding-left: 16px;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.res-text-br > h3 {
+  margin-bottom: 20px;
+  color: $color-main;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.res-text-br > p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sale-wrp-br {
+  @include box-green;
+}
+
+.sale-b2b-wrp-br {
+  @include box-green;
+}
+
+.sale-text-br {
+  @extend %pos-cent-flex;
+  max-width: 434px;
+  padding-left: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sale-text-br > h3 {
+  margin-bottom: 20px;
+  color: $color-main;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sale-text-br > p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 1034px) {
+  .sale-wrp-br {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .sale-b2b-wrp-br {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .wrp-advantages-br {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .consultation-br {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .res-text-br > p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 830px) {
+  .sale-wrp-br {
+    margin-bottom: 30px;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .sale-b2b-wrp-br {
+    margin-bottom: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .res-text-br {
+    padding-left: 0;
+    text-align: center;
+  }
+  .sale-text-br {
+    text-align: center;
+    padding-left: 0;
+  }
+  .sale-text-br > p {
+    font-size: 18px;
+  }
+  .sale-btm-br {
+    margin-left: auto;
+  }
+}
