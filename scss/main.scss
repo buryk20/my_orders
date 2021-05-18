@@ -1,128 +1,69 @@
 // @import "_mixin.scss";
 @import "_main_variable_gv_orders.scss";
 @import "_normalize.scss";
+@import "_menu_cab.scss";
 
-.menu-orders-wrp {
-  width: 280px;
-}
-
-.menu-cab-wrp {
-  width: 100%;
-  max-width: 1600px;
-  padding-top: 16px;
-  @extend %pos-cent-marg;
-  @extend %pos-cent-flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.name-orders {
-  margin-bottom: 28px;
-}
-
-.name-orders-img {
-  width: 46px;
-  height: 46px;
-  background-color: $color-back-grey;
-  border-radius: 50%;
-}
-
-.name-orders-link {
-  @extend %pos-left-flex;
-  @extend %padding-left-my-orders;
-  min-height: 72px;
-  box-shadow: $block-shadow;
-  font-family: $font-roboto-reg;
-  color: $color-text-orders;
-}
-
-.name-orders-link:hover {
-  color: $color-main;
-}
-
-.name-orders-link > div > h3 {
-  @extend %font-weight-400;
-  @extend %text-size-my-orders;
-  margin-bottom: 8px;
-}
-
-.name-orders-link > div > p {
-  font-size: 12px;
-  line-height: 16px;
-  color: #8a8a8a;
-}
-
-.name-orders-img-wrp {
-  @extend %margin-right-icon;
-}
-
-.menu-cab-wrp-link {
-  @extend %pos-left-flex;
-}
-
-.menu-cab-like-wrp {
-  @extend %pos-left-flex;
-}
-
-.menu-cab-like-pos {
-  justify-content: space-between;
-}
-
-.menu-cab-wrp-link > div > p {
-  @extend %text-main;
-  @extend %text-size-my-orders;
-}
-
-.menu-cab-wrp-link > p {
-  @extend %text-main;
-  @extend %text-size-my-orders;
-}
-
-.menu-cab-wrp-link:hover {
-  color: $color-main;
-}
-
-.menu-cab-img {
-  @extend %margin-right-icon;
-}
-
-.menu-cab-text-wrp {
-}
-
-.menu-cab-user {
-  padding: 10px 14px;
-  box-shadow: $block-shadow;
-  display: flex;
-  flex-direction: column-reverse;
-  box-sizing: border-box;
-}
-
-.menu-cab-text-wrp + .menu-cab-text-wrp {
-  margin-bottom: 24px;
-}
-
-.menu-cab-line {
-  padding-top: 10px;
-  margin-bottom: 14px;
-  border-bottom: $line-grey-col;
-}
-
-.menu-cab-menu-cab {
-  min-width: 24px;
-  height: 24px;
-  padding: 2px 7px;
-  @extend %text-main;
-  background-color: $color-main;
-  border-radius: 34px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.mane-menu-wrp {
+.my-orders-wrp {
   padding: 10px 0 0 24px;
   font-family: $font-roboto-reg;
   color: $color-text-orders;
+}
+
+.my-orders-list-wrp {
+  width: 1107px;
+  padding: 24px 14px;
+  position: relative;
+  box-shadow: $block-shadow;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+}
+
+.my-orders-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-orders-status {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $color-main;
+  border-radius: 34px;
+}
+
+.my-orders-heading {
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-orders-wrp > h1 {
+  margin-bottom: 24px;
+}
+
+.orders-info {
+  @extend %text-size-my-orders;
+}
+
+.orders-info-n {
+  margin-bottom: 8px;
+}
+
+.order-status-text {
+  font-weight: 600;
+}
+
+.order-info-img-wrp {
+  padding-right: 93px;
+  display: flex;
+}
+
+.arrow-my-orders-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-cab-line-orders {
+  border-bottom: $line-grey-col;
 }

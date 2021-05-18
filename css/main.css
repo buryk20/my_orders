@@ -17,7 +17,7 @@
   margin-right: 22px;
 }
 
-.name-orders-link > div > h3, .menu-cab-wrp-link > div > p, .menu-cab-wrp-link > p {
+.name-orders-link > div > h3, .menu-cab-wrp-link > div > p, .menu-cab-wrp-link > p, .orders-info {
   line-height: 20px;
   font-size: 16px;
 }
@@ -185,6 +185,7 @@ label {
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
   color: #363636;
+  border-radius: 8px;
 }
 
 .name-orders-link:hover {
@@ -212,6 +213,7 @@ label {
 .menu-cab-user {
   padding: 10px 14px;
   box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   display: flex;
   flex-direction: column-reverse;
   box-sizing: border-box;
@@ -239,8 +241,63 @@ label {
   line-height: 20px;
 }
 
-.mane-menu-wrp {
+.my-orders-wrp {
   padding: 10px 0 0 24px;
   font-family: "Roboto", sans-serif;
   color: #363636;
+}
+
+.my-orders-list-wrp {
+  width: 1107px;
+  padding: 24px 14px;
+  position: relative;
+  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.my-orders-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-orders-status {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: #159822;
+  border-radius: 34px;
+}
+
+.my-orders-heading {
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-orders-wrp > h1 {
+  margin-bottom: 24px;
+}
+
+.orders-info-n {
+  margin-bottom: 8px;
+}
+
+.order-status-text {
+  font-weight: 600;
+}
+
+.order-info-img-wrp {
+  padding-right: 93px;
+  display: flex;
+}
+
+.arrow-my-orders-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-cab-line-orders {
+  border-bottom: 1px solid #c4c4c4;
 }
