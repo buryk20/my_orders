@@ -1,0 +1,83 @@
+.my-orders-wrp {
+  padding: 10px 0 0 24px;
+  font-family: $font-roboto-reg;
+  color: $color-text-orders;
+}
+
+.my-orders-list-wrp {
+  width: 1107px;
+  padding: 24px 14px;
+  position: relative;
+  box-shadow: $block-shadow;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+}
+
+.my-orders-list {
+  display: flex;
+  align-items: center;
+}
+
+.my-orders-status {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $color-main;
+  border-radius: 34px;
+}
+
+.my-orders-heading {
+  @extend %position-orders-inf;
+}
+
+.my-orders-wrp > h1 {
+  margin-bottom: 24px;
+}
+
+.orders-info {
+  @extend %text-size-my-orders;
+}
+
+.orders-info-n {
+  margin-bottom: 8px;
+}
+
+.order-status-text {
+  font-weight: 600;
+}
+
+.order-info-img-wrp {
+  padding-right: 43px;
+  display: flex;
+  margin-left: auto;
+}
+
+.arrow-my-orders-icon {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu-cab-line-orders {
+  border-bottom: $line-grey-col;
+}
+
+.order-img-product {
+  max-width: 76px;
+  width: 100%;
+  height: 76px;
+}
+
+.orders-drop-down-list {
+  display: none;
+  transition: display 3s, height 3s;
+}
+
+.ord-list-pr-over-wrp {
+  display: flex;
+}
+
+.orders-drop-down-inf {
+  @extend %position-orders-inf;
+  flex-direction: column;
+}

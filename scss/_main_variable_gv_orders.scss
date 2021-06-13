@@ -12,6 +12,13 @@ $block-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
 $border-radius: 8px;
 
 //вложенности
+%position-orders-inf {
+  display: flex;
+  align-items: flex-start;
+  max-width: 459px;
+  width: 100%;
+}
+
 %icon-position-cent {
   position: relative;
   display: flex;

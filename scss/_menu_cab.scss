@@ -4,12 +4,10 @@
 
 .menu-cab-wrp {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1440px;
   padding-top: 16px;
   @extend %pos-cent-marg;
   @extend %pos-cent-flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: flex-start;
 }
 
