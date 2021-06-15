@@ -6,11 +6,13 @@ window.onload = function () {
         el.onclick = function (e) {
             if (ordersDropDownList[0].style.display != 'flex') {
                 ordersDropDownList[0].style.display = 'flex';
-                ordersDropDownList[0].style.height = '100%'
-                // ordersDropDownList[0].style.transition = 'all 1s ease-out'
+                ordersDropDownList[0].style.maxHeight = '100%';
+                ordersDropDownList[0].style.transition = 'all 4s ease-out 4s';
+                document.getElementsByClassName('arrow-my-orders-icon')[0].style.transform = 'rotate(180deg)';
             } else {
                 ordersDropDownList[0].style.display = 'none';
-                ordersDropDownList[0].style.height = '0'
+                ordersDropDownList[0].style.maxHeight = '0';
+                document.getElementsByClassName('arrow-my-orders-icon')[0].style.transform = 'rotate(0deg)';
             }
 
 

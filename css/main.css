@@ -1,5 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.ord-name-product-pr, .ord-quantity-product-pr {
+  text-align: center;
+}
+
+.my-orders-list, .order-info-img-wrp, .ord-pr-inf-wp {
+  display: flex;
+}
+
+.ord-putchase-returns, .btm-ord-warranty-card {
+  padding: 8px 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
 .my-orders-heading, .orders-drop-down-inf {
   display: flex;
   align-items: flex-start;
@@ -194,7 +209,7 @@ label {
 }
 
 .name-orders-link:hover {
-  color: #159822;
+  color: #009b44;
 }
 
 .name-orders-link > div > h3 {
@@ -212,7 +227,7 @@ label {
 }
 
 .menu-cab-wrp-link:hover {
-  color: #159822;
+  color: #009b44;
 }
 
 .menu-cab-user {
@@ -238,7 +253,7 @@ label {
   min-width: 24px;
   height: 24px;
   padding: 2px 7px;
-  background-color: #159822;
+  background-color: #009b44;
   border-radius: 34px;
   color: #ffffff;
   font-weight: 500;
@@ -262,7 +277,6 @@ label {
 }
 
 .my-orders-list {
-  display: flex;
   align-items: center;
 }
 
@@ -270,7 +284,7 @@ label {
   width: 10px;
   height: 45px;
   margin-right: 16px;
-  background-color: #159822;
+  background-color: #009b44;
   border-radius: 34px;
 }
 
@@ -288,7 +302,6 @@ label {
 
 .order-info-img-wrp {
   padding-right: 43px;
-  display: flex;
   margin-left: auto;
 }
 
@@ -300,6 +313,7 @@ label {
 
 .menu-cab-line-orders {
   border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 9px;
 }
 
 .order-img-product {
@@ -310,13 +324,77 @@ label {
 
 .orders-drop-down-list {
   display: none;
-  transition: display 3s, height 3s;
+  transition: max-height 3s;
 }
 
-.ord-list-pr-over-wrp {
-  display: flex;
+.ord-list-pr-over-wrp > div > p {
+  margin-bottom: 29px;
+  color: #8a8a8a;
 }
 
 .orders-drop-down-inf {
   flex-direction: column;
+}
+
+.orders-drop-down-inf > h2,
+.orders-drop-down-inf > h3,
+.orders-drop-down-inf > p {
+  margin-bottom: 24px;
+  letter-spacing: normal;
+}
+
+.orders-drop-down-inf > p {
+  font-size: 16px;
+}
+
+.orders-drop-down-inf > h2 {
+  color: #009b44;
+  font-size: 20px;
+}
+
+.orders-drop-down-inf > h3 {
+  color: #8a8a8a;
+  font-size: 16px;
+}
+
+.ord-pr-inf-wp {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ord-putchase-returns {
+  margin-bottom: 24px;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.btm-ord-warranty-card {
+  border: 1px solid #009b44;
+  color: #009b44;
+}
+
+.ord-name-product-wrp {
+  max-width: 210px;
+  width: 100%;
+  padding-left: 12px;
+}
+
+.ord-name-product-pr {
+  color: #363636;
+}
+
+.ord-name-product-pr > h4 {
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: #363636;
+  font-weight: 400;
+}
+
+.ord-name-product-pr > p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ord-opening-win-inf {
+  width: 100%;
 }
