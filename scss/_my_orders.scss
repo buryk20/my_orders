@@ -76,6 +76,7 @@
   display: flex;
   transition: 0.6s;
   overflow:hidden;
+  overflow-y: auto;
 }
 
 .ord-list-pr-over-wrp > div > p {
@@ -111,7 +112,7 @@
 
 .ord-pr-inf-wp {
   @extend %disp-flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -135,6 +136,7 @@
 }
 
 .ord-name-product-pr {
+  position: relative;
   color: $color-text-orders;
   @extend %text-centr;
 }
@@ -157,4 +159,15 @@
 
 .ord-quantity-product-pr {
   @extend %text-centr;
+}
+
+div .sale-pr-ord {
+  position: absolute;
+  font-size: 12px;
+  color: $color-text-grey;
+  position: absolute;
+        // top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 0)
 }
