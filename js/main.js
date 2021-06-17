@@ -6,6 +6,8 @@ window.onload = function () {
 
     informationOrder.forEach((el) => {
         el.onclick = function (e) {
+            // let target = e.target;
+            // console.log(target);
             if (ordersDropDownList[0].hasAttribute("style"))
             {
                 turnIcon[0].style.transform = 'rotate(0deg)';

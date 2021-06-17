@@ -166,8 +166,49 @@ div .sale-pr-ord {
   font-size: 12px;
   color: $color-text-grey;
   position: absolute;
-        // top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, 0)
+  font-weight: 400;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  text-decoration: line-through;
+}
+
+div .ord-name-product-sale {
+  color: $color-red-btm;
+}
+
+.ord-inf-main-wrp {
+  padding-top: 33px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ord-inf-main-pay {
+  text-align: right;
+}
+
+.ord-inf-main-wrp > div > p,
+.ord-inf-main-pay > div > p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.ord-inf-main-wrp > div > p.ord-inf-pr-pay-b {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ord-inf-main-btm {
+  display: flex;
+}
+
+.ord-inf-repeat-btm {
+  margin-right: 0;
+  margin-left: auto;
+  @include btn-inp-form;
+}
+
+.ord-inf-repeat-btm:hover {
+  background-color: $color-main-hov;
 }
