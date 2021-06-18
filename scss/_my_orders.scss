@@ -26,6 +26,22 @@
   border-radius: 34px;
 }
 
+.my-orders-status-node {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $color-border-grey;
+  border-radius: 34px;
+}
+
+.my-orders-status-expected {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: $color-status-expected;
+  border-radius: 34px;
+}
+
 .my-orders-heading {
   @extend %position-orders-inf;
 }
@@ -61,7 +77,7 @@
 }
 
 .menu-cab-line-orders {
-  border-bottom: $line-grey-col;
+  border-bottom: $border-grey;
   margin-bottom: 9px;
 }
 

@@ -326,6 +326,22 @@ label {
   border-radius: 34px;
 }
 
+.my-orders-status-node {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: #d1d1d1;
+  border-radius: 34px;
+}
+
+.my-orders-status-expected {
+  width: 10px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: #F5821F;
+  border-radius: 34px;
+}
+
 .my-orders-wrp > h1 {
   margin-bottom: 24px;
 }
@@ -354,7 +370,7 @@ label {
 }
 
 .menu-cab-line-orders {
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #d1d1d1;
   margin-bottom: 9px;
 }
 
