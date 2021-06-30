@@ -261,3 +261,12 @@ div .ord-name-product-sale {
     max-width: 315px;
   }
 }
+
+@media (max-width: 1220px) {
+  .menu-orders-wrp {
+    display: none;
+  }
+  .my-orders-wrp {
+    padding: 0;
+  }
+}
