@@ -91,7 +91,7 @@
   max-height: 0;
   display: flex;
   transition: 0.6s;
-  overflow:hidden;
+  overflow: hidden;
   overflow-y: auto;
 }
 
@@ -219,6 +219,10 @@ div .ord-name-product-sale {
   display: flex;
 }
 
+.ord-inf-main-btm > .ord-putchase-returns {
+  margin-bottom: 0;
+}
+
 .ord-inf-repeat-btm {
   margin-right: 0;
   margin-left: auto;
@@ -227,4 +231,33 @@ div .ord-name-product-sale {
 
 .ord-inf-repeat-btm:hover {
   background-color: $color-main-hov;
+}
+
+//мобильная версия
+
+@media (max-width: 1427px) {
+  .my-orders-list-wrp {
+    width: 1000px;
+  }
+  .my-orders-heading {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 1327px) {
+  .my-orders-list-wrp {
+    width: 950px;
+  }
+  .my-orders-heading {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .my-orders-list-wrp {
+    width: 900px;
+  }
+  .my-orders-heading {
+    max-width: 315px;
+  }
 }
