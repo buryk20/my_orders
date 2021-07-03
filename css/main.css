@@ -281,27 +281,34 @@ label {
 }
 
 .my-orders-status {
+  position: absolute;
   width: 10px;
-  height: 45px;
-  margin-right: 16px;
+  height: 46px;
+  left: 16px;
   background-color: #009b44;
   border-radius: 34px;
 }
 
 .my-orders-status-node {
+  position: absolute;
   width: 10px;
-  height: 45px;
-  margin-right: 16px;
+  height: 46px;
+  left: 16px;
   background-color: #d1d1d1;
   border-radius: 34px;
 }
 
 .my-orders-status-expected {
+  position: absolute;
   width: 10px;
-  height: 45px;
-  margin-right: 16px;
-  background-color: #F5821F;
+  height: 46px;
+  left: 16px;
+  background-color: #f5821f;
   border-radius: 34px;
+}
+
+.my-orders-heading {
+  padding-left: 26px;
 }
 
 .my-orders-wrp > h1 {
@@ -338,6 +345,13 @@ label {
   max-width: 76px;
   width: 100%;
   height: 76px;
+}
+
+.ord-price-wrp-text {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .orders-drop-down-list {
@@ -488,6 +502,26 @@ div .ord-name-product-sale {
   background-color: #106e19;
 }
 
+.order-row-wrp {
+  display: flex;
+}
+
+.my-orders-icon-mob-wrp {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.my-orders-icon-mob-wrp > img {
+  margin-right: 22px;
+  display: none;
+}
+
+.order-wrp-name-ing {
+  display: flex;
+  align-items: center;
+}
+
 @media (max-width: 1427px) {
   .my-orders-list-wrp {
     width: 1000px;
@@ -516,10 +550,71 @@ div .ord-name-product-sale {
 }
 
 @media (max-width: 1220px) {
+  .my-orders-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .order-info-img-wrp {
+    margin-left: 0;
+  }
+  .order-info-img-wrp {
+    padding-left: 26px;
+  }
+  .orders-info {
+    padding-left: 26px;
+  }
+  .my-orders-heading {
+    padding-left: 0;
+  }
+  .my-orders-list-wrp {
+    width: 344px;
+  }
+  .my-orders-status {
+    height: 160px;
+  }
+  .my-orders-status-expected {
+    height: 160px;
+  }
+  .my-orders-status-node {
+    height: 160px;
+  }
+  .orders-drop-down-list {
+    flex-direction: column;
+  }
+  .btm-ord-warranty-card {
+    margin-bottom: 24px;
+  }
+  .my-orders-wrp > .my-orders-icon-mob-wrp > h1 {
+    font-size: 16px;
+  }
+  .ord-pr-inf-wp {
+    flex-direction: column;
+  }
+  .ord-inf-main-btm {
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+  }
+  .ord-inf-repeat-btm {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .my-orders-icon-mob-wrp > img {
+    display: block;
+  }
+  .ord-inf-main-btm > .ord-putchase-returns {
+    margin-bottom: 16px;
+  }
+  .ord-inf-repeat-btm {
+    width: 203px;
+  }
+}
+
+@media (max-width: 671px) {
+  .my-orders-wrp {
+    padding: 10px 15px;
+  }
   .menu-orders-wrp {
     display: none;
-  }
-  .my-orders-wrp {
-    padding: 0;
   }
 }
