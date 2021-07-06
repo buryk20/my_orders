@@ -5,19 +5,26 @@
 }
 
 .my-orders-list, .order-info-img-wrp, .ord-pr-inf-wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .ord-putchase-returns, .btm-ord-warranty-card {
   padding: 8px 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 6px;
   font-size: 18px;
 }
 
 .my-orders-heading, .orders-drop-down-inf {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   max-width: 459px;
   width: 100%;
 }
@@ -49,14 +56,24 @@
 }
 
 .name-orders-link, .menu-cab-wrp-link, .menu-cab-like-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-cab-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 html,
@@ -82,7 +99,8 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 0 none;
   background-color: transparent;
   scroll-behavior: smooth;
@@ -161,6 +179,7 @@ select {
 input,
 textarea {
   outline: none;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -171,9 +190,12 @@ label {
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -186,7 +208,9 @@ label {
   width: 100%;
   max-width: 1440px;
   padding-top: 16px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .name-orders {
@@ -202,7 +226,8 @@ label {
 
 .name-orders-link {
   min-height: 72px;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
   color: #363636;
   border-radius: 8px;
@@ -223,7 +248,9 @@ label {
 }
 
 .menu-cab-like-pos {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-cab-wrp-link:hover {
@@ -232,11 +259,18 @@ label {
 
 .menu-cab-user {
   padding: 10px 14px;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column-reverse;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu-cab-text-wrp + .menu-cab-text-wrp {
@@ -261,6 +295,10 @@ label {
   line-height: 20px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .my-orders-wrp {
   padding: 10px 0 0 24px;
   font-family: "Roboto", sans-serif;
@@ -271,13 +309,17 @@ label {
   width: 1107px;
   padding: 24px 14px;
   position: relative;
-  box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .my-orders-list {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .my-orders-status {
@@ -331,8 +373,10 @@ label {
 .arrow-my-orders-icon {
   position: absolute;
   right: 15px;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   cursor: pointer;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
@@ -350,16 +394,26 @@ label {
 .ord-price-wrp-text {
   max-width: 300px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .orders-drop-down-list {
   max-height: 0;
-  display: flex;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
   overflow: hidden;
   overflow-y: auto;
+}
+
+.orders-drop-down-list-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ord-list-pr-over-wrp > div > p {
@@ -368,7 +422,10 @@ label {
 }
 
 .orders-drop-down-inf {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .orders-drop-down-inf > h2,
@@ -393,8 +450,12 @@ label {
 }
 
 .ord-pr-inf-wp {
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ord-putchase-returns {
@@ -443,7 +504,8 @@ div .sale-pr-ord {
   font-weight: 400;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   text-decoration: line-through;
 }
 
@@ -454,8 +516,12 @@ div .ord-name-product-sale {
 .ord-inf-main-wrp {
   padding-top: 33px;
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .ord-inf-main-pay {
@@ -474,6 +540,8 @@ div .ord-name-product-sale {
 }
 
 .ord-inf-main-btm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -493,6 +561,7 @@ div .ord-name-product-sale {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid #009b44;
   cursor: pointer;
@@ -503,13 +572,20 @@ div .ord-name-product-sale {
 }
 
 .order-row-wrp {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .my-orders-icon-mob-wrp {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .my-orders-icon-mob-wrp > img {
@@ -518,8 +594,12 @@ div .ord-name-product-sale {
 }
 
 .order-wrp-name-ing {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1427px) {
@@ -551,8 +631,13 @@ div .ord-name-product-sale {
 
 @media (max-width: 1220px) {
   .my-orders-list {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .order-info-img-wrp {
     margin-left: 0;
@@ -578,8 +663,11 @@ div .ord-name-product-sale {
   .my-orders-status-node {
     height: 160px;
   }
-  .orders-drop-down-list {
-    flex-direction: column;
+  .orders-drop-down-list-wrp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .btm-ord-warranty-card {
     margin-bottom: 24px;
@@ -588,7 +676,10 @@ div .ord-name-product-sale {
     font-size: 16px;
   }
   .ord-pr-inf-wp {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .ord-inf-main-btm {
     margin-bottom: 20px;
@@ -618,3 +709,4 @@ div .ord-name-product-sale {
     display: none;
   }
 }
+/*# sourceMappingURL=main.css.map */

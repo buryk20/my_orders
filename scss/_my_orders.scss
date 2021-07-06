@@ -1,3 +1,7 @@
+body {
+  overflow-x:hidden;
+}
+
 .my-orders-wrp {
   padding: 10px 0 0 24px;
   font-family: $font-roboto-reg;
@@ -105,10 +109,14 @@
 
 .orders-drop-down-list {
   max-height: 0;
-  display: flex;
+  // display: flex;
   transition: 0.6s;
   overflow: hidden;
   overflow-y: auto;
+}
+
+.orders-drop-down-list-wrp {
+  display: flex;
 }
 
 .ord-list-pr-over-wrp > div > p {
@@ -250,6 +258,7 @@ div .ord-name-product-sale {
 }
 
 .order-row-wrp {
+  padding-top: 10px;
   display: flex;
 }
 
@@ -332,7 +341,7 @@ div .ord-name-product-sale {
   .my-orders-status-node {
     height: 160px;
   }
-  .orders-drop-down-list {
+  .orders-drop-down-list-wrp {
     flex-direction: column;
   }
   .btm-ord-warranty-card {

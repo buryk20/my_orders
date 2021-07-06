@@ -16,7 +16,7 @@ window.onload = function () {
 
             else {
                 el.style.transform = 'rotate(180deg)';
-                list.style.maxHeight = "1000px";
+                list.style.maxHeight = "1500px";
             }
         }
     });
