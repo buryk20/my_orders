@@ -385,6 +385,12 @@ body {
   margin-bottom: 9px;
 }
 
+.menu-cab-line-orders-mob {
+  padding-top: 15px;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 9px;
+}
+
 .order-img-product {
   max-width: 76px;
   width: 100%;
@@ -698,6 +704,9 @@ div .ord-name-product-sale {
   }
   .ord-inf-repeat-btm {
     width: 203px;
+  }
+  .menu-cab-line-orders-mob {
+    padding-top: 0;
   }
 }
 
